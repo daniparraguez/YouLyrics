@@ -1,0 +1,89 @@
+body{
+  background-color: #FAFAFA;
+}
+/*Estilos Bienvenida*/
+
+.cat h1 {
+  padding-top: 150px;
+  font-size: 33px;
+  font-weight: bold;
+  color: #73706f;
+}
+
+.btn {
+  background-color: #f98206;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f98206;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Estilos innerHTML*/
+#play h1 {
+  color: #61605e;
+
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+#play p {
+  color: #73706f;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*Centrar navbar*/
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+/*Estilos navbar*/
+.navbarTop {
+  background-image: url(../img/disc2.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10em;
+}
+
+.navbarTop li a {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbarBottom {
+  background-color: #f9600c;
+  height: 70px;
+}
+
+.navbarBottom p, .navbarBottom i {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbarBottom i {
+  font-size: 20px;
+}
+#letra{
+  line-height: 2em;
+  text-align: justify;
+  font-size: 1.5em;
+  color: #8C8C8C;
+  background: transparent;
+  height: 45%;
+}

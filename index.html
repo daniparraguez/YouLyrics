@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>YouLyrics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/img/youtubemusicaam2.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menú fixed top-->
+  <nav class="navbarTop navbar navbar-default navbar-fixed-top img-responsive">
+    <div class="menu container-fluid">
+      <ul class="nav navbar-nav">
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Bienvenida-->
+  <div class="cat container-fluid">
+        <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1 id="welcome">YouLyrics</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-xs-6 col-xs-offset-3" id="search">
+      <p><input type="text" id="searchArtist" placeholder="Type a band/singer" autocomplete="off" class="form-control" /></p>
+      <p><input type="text" id="searchSong" placeholder="Type a song" autocomplete="off" class="form-control" /></p>
+      <p><input type="submit" id="buscar" value="Get your lyric!" class="form-control btn btn-primary w100"></p>
+  </div>
+
+  <!-- Contenedor-->
+  <div class="container new-lyrics">
+    <div class="row">
+      <div class="col-xs-offset-2 col-xs-10">
+        <div><p id="lyrics"></p></div>
+      </div>
+    </div>
+    <div class="row" id="btn"></div>
+  </div>
+
+<!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+
+
+
+</html>
