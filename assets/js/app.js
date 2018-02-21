@@ -1,6 +1,13 @@
 $(document).ready(function(){
 
-$('#buscar').click(function() {
+$('#buscar').click(showing)
+
+function showing() {
+  getLyrics();
+  getImages();
+}
+
+function getLyrics() {
 
   const artistVal = $('#searchArtist').val();
   const songVal = $('#searchSong').val();
@@ -16,13 +23,14 @@ $.ajax({
 console.log(response.lyrics);
 const letra = response.lyrics;
 
-    $('#lyrics').append(`<h2>${artistVal}/${songVal}</h2><h5 id='letra'>${letra}</h5>`);
+    $('#toappend').append(`<div id="cancionBuscada"><h2>${artistVal}/${songVal}</h2><p class='letra'>${letra}</p></div>`);
     $('#search').hide()
-    $('#btn').append('<button type="button" class="btn btn-default btn">Search again!</button>')
-    $('.btn').click(function() {
+    $('#busqueda').append('<button type="button" class="btn btn-default boton">Search again!</button>')
+    $('.boton').click(function() {
       $('#search').show()
-
-
+      $('#cancionBuscada').remove()
+      $('.boton').remove();
+      $('#toappend').append('<p id="lyrics"></p>')
     })
 })
 
@@ -30,6 +38,8 @@ const letra = response.lyrics;
   console.log("error");
 })
 
-});
+};
 
+function getImages() {
+}
 });
