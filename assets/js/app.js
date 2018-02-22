@@ -41,5 +41,40 @@ const letra = response.lyrics;
 };
 
 function getImages() {
-}
+
+
+const artistVal = $('#searchArtist').val();
+  console.log(artistVal);
+
+
+$.ajax({
+      url: "http://api.giphy.com/v1/gifs/search",
+      type: "GET",
+      datatype: "json",
+      data : {
+        q : artistVal,
+        api_key : "dc6zaTOxFJmzC"
+      },
+    })
+
+.done(function(response) {
+const firstResult = response.data[0];
+const firstGif =response.data[0].images.downsized_large.url;
+console.log(response.data[0]);
+
+console.log(response.data[0].images.downsized_large.url)
+
+$('#elementos').append(`<div><img src = ${firstGif}/>`)
+
+
+    })
+
+
+.fail(function() {
+  console.log("error");
+})
+
+};
+
 });
+
