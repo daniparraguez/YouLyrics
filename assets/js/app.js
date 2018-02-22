@@ -11,8 +11,8 @@ function getLyrics() {
 
   const artistVal = $('#searchArtist').val();
   const songVal = $('#searchSong').val();
-  console.log(artistVal);
-  console.log(songVal);
+//console.log(artistVal);
+// console.log(songVal);
 
 $.ajax({
   url: `https://api.lyrics.ovh/v1/${artistVal}/${songVal}`,
@@ -20,7 +20,7 @@ $.ajax({
   dataType: 'json',
 })
 .done(function(response) {
-console.log(response.lyrics);
+//console.log(response.lyrics);
 const letra = response.lyrics;
 
     $('#toappend').append(`<div id="cancionBuscada"><h2>${artistVal}/${songVal}</h2><p class='letra'>${letra}</p></div>`);
@@ -44,7 +44,7 @@ const letra = response.lyrics;
 function getImages() {
 
 const artistVal = $('#searchArtist').val();
-  console.log(artistVal);
+// console.log(artistVal);
 
 $.ajax({
       url: "http://api.giphy.com/v1/gifs/search",
@@ -59,15 +59,11 @@ $.ajax({
 .done(function(response) {
 const firstResult = response.data[0];
 const firstGif =response.data[0].images.downsized_large.url;
-console.log(response.data[0]);
-
-console.log(response.data[0].images.downsized_large.url)
+//console.log(response.data[0]);
+//console.log(response.data[0].images.downsized_large.url)
 
 $('#elementos').append(`<div><img id="gif" src = ${firstGif}/>`)
-
-
-
-    })
+})
 
 
 .fail(function() {
