@@ -23,7 +23,13 @@ $.ajax({
 console.log(response.lyrics);
 const letra = response.lyrics;
 
-    $('#toappend').append(`<div id="cancionBuscada"><h2>${artistVal}/${songVal}</h2><p class='letra'>${letra}</p></div>`);
+    $('#toappend').append(`<div class="container" id="cancionBuscada">
+            <div class="row">
+              <div class="col-lg-12 col-xs-12 col-center">
+                <h2>${artistVal}/${songVal}</h2><p class='letra'>${letra}</p>
+              </div>
+            </div>
+          </div>`);
     $('#search').hide()
     $('#busqueda').append('<button type="button" class="btn btn-default boton">Search again!</button>')
     $('.boton').click(function() {
@@ -77,4 +83,3 @@ $('#elementos').append(`<div><img id="gif" src = ${firstGif}/>`)
 };
 
 });
-
