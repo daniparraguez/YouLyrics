@@ -1,89 +1,89 @@
-body{
-  background-color: #FAFAFA;
-}
-/*Estilos Bienvenida*/
-
-.cat h1 {
-  padding-top: 150px;
-  font-size: 33px;
-  font-weight: bold;
-  color: #73706f;
+.col-center {
+    float: none;
+    margin: 0 auto;
 }
 
-.btn {
-  background-color: #f98206;
-  color: #fff;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background-color: #f98206;
-  color: #fff;
-  font-weight: bold;
-}
-
-/*Estilos innerHTML*/
-#play h1 {
-  color: #61605e;
-
-  padding-top: 100px;
-  font-weight: bold;
-}
-
-#play p {
-  color: #73706f;
-  font-size: 20px;
-  padding: 10px;
-}
-
-/*Centrar navbar*/
-.navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-}
-
-.navbar-nav > li {
-    display: inline-block;
-    float:none;
-}
-
-/*Estilos navbar*/
-.navbarTop {
+/*Estilos body*/
+body {
   background-image: url(../img/disc2.gif);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 10em;
+  height: 20em;
+  background-position: center 0%;
+  background-color: #000;
 }
 
-.navbarTop li a {
-  margin-top: 15px;
+h1 {
   color: #fff;
-  font-size: 20px;
+  font-size: 70px;
   font-weight: bold;
 }
 
-.navbarBottom {
-  background-color: #f9600c;
-  height: 70px;
+/*Estilos formulario*/
+.input-group {
+  margin: 30px;
+  border-radius: 6px;
 }
 
-.navbarBottom p, .navbarBottom i {
-  margin-top: 5px;
-  font-size: 12px;
+.input {
+  padding: 20px;
+  width: 100%;
+  border-radius: 0px 6px 6px 0px;
+  border: none;
+}
+
+.input-group-addon {
+  background-color: #f502d5;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 0px 30px;
+}
+
+.input-group-addon:hover {
+  background: #a202f9;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #a202f9;
   color: #fff;
   font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
 
-.navbarBottom i {
-  font-size: 20px;
+.btn:hover {
+  background-color: #f43959;
 }
-.letra{
-  line-height: 2em;
-  text-align: justify;
-  font-size: 1.5em;
-  color: #8C8C8C;
-  background: transparent;
-  height: 45%;
+
+/*Estilos contenedor letras*/
+#cancionBuscada {
+  background-color: #bfc1c6;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+#cancionBuscada h2 {
+  font-family: 40px;
+  color: #158efc;
+}
+
+#cancionBuscada p {
+  font-family: 25px;
+  color: #2e2f2f;
+}
+
+#btnagain {
+  background-color: #a202f9;
+  padding: 20px;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}
+
+#btnagain:hover {
+  background-color: #f43959;
 }

@@ -12,35 +12,41 @@
 </head>
 
 <body>
-  <!-- Menú fixed top-->
-  <nav class="navbarTop navbar navbar-default navbar-fixed-top img-responsive">
-    <div class="menu container-fluid">
-      <ul class="nav navbar-nav">
-
-      </ul>
-    </div>
-  </nav>
   <!-- Bienvenida-->
-  <div class="cat container-fluid">
+  <div class="titulo container-fluid">
         <div class="row">
       <div class="col-xs-12 text-center">
-        <h1 id="welcome">YouLyrics</h1>
+        <h1>YouLyrics</h1>
       </div>
     </div>
   </div>
-
-
-  <div class="col-xs-6 col-xs-offset-3" id="search">
-      <p><input type="text" id="searchArtist" placeholder="Type a band/singer" autocomplete="off" class="form-control" /></p>
-      <p><input type="text" id="searchSong" placeholder="Type a song" autocomplete="off" class="form-control" /></p>
-      <p><input type="submit" id="buscar" value="Get your lyric!" class="form-control btn btn-primary w100"></p>
+<!-- Formulario-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6"id="search">
+      <div class="input-group ">
+      <span class="input-group-addon"><p>ARTIST</p></span>
+      <input class="input" type="text" id="searchArtist" placeholder="Ex. Depeche Mode" autocomplete="off"/>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><p>SONG</p></span>
+      <input class="input" type="text" id="searchSong" placeholder="Ex. Enjoy the silence" autocomplete="off" />
+    </div>
+  <div class="col-center">
+  <input class="btn" type="submit" id="buscar" value="Get your lyric!">
   </div>
-
+</div>
+<div class="col-lg-3"></div>
+</div>
+</div>
   <!-- Contenedor-->
-  <div class="container new-lyrics">
+  <div class="container new-lyrics text-center">
     <div class="row">
-      <div class="col-xs-offset-4 col-xs-8">
-        <div id="toappend"></div>
+      <div class="col-xs-12">
+        <div class="toappend" id="toappend">
+
+        </div>
         <div class="row" id="elementos"></div>
       </div>
     </div>
@@ -48,14 +54,12 @@
 
   </div>
 
+
+
+
 <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
-
 </body>
-
-
-
-
 </html>
