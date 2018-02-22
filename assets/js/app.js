@@ -31,21 +31,20 @@ const letra = response.lyrics;
       $('#cancionBuscada').remove()
       $('.boton').remove();
       $('#toappend').append('<p id="lyrics"></p>')
+      $('#gif').remove()
+      $('#elementos').append('<div class="row" id="elementos"></div>')
     })
 })
 
 .fail(function() {
   console.log("error");
 })
-
 };
 
 function getImages() {
 
-
 const artistVal = $('#searchArtist').val();
   console.log(artistVal);
-
 
 $.ajax({
       url: "http://api.giphy.com/v1/gifs/search",
@@ -64,7 +63,8 @@ console.log(response.data[0]);
 
 console.log(response.data[0].images.downsized_large.url)
 
-$('#elementos').append(`<div><img src = ${firstGif}/>`)
+$('#elementos').append(`<div><img id="gif" src = ${firstGif}/>`)
+
 
 
     })
